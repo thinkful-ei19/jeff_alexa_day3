@@ -50,29 +50,51 @@
 // //     Object.keys())
 
 
-let owner = {
-    name:'John',
-    jobTitle:'Marketing'
-}
-let employee1 = {
-    name:'Smiley',
-    jobTitle:'Salesman',
-    boss: 'Juan'
-}
-let employee2 = {
-    name:'Bob',
-    jobTitle:'In-n-out',
-    boss: 'Rich'
-}
+// let owner = {
+//     name:'John',
+//     jobTitle:'Marketing'
+// }
+// let employee1 = {
+//     name:'Smiley',
+//     jobTitle:'Salesman',
+//     boss: 'Juan'
+// }
+// let employee2 = {
+//     name:'Bob',
+//     jobTitle:'In-n-out',
+//     boss: 'Rich'
+// }
 
-let arr = [owner, employee1, employee2];
+// let arr = [owner, employee1, employee2];
 
-for(let i = 0;i<arr.length;i++){
-    if( arr[i].boss !== undefined) {
-    console.log(`${arr[i].name} ${arr[i].jobTitle} reports to ${arr[i].boss}.`);
-} else if( arr[i].boss === undefined) {
-    console.log(`${arr[i].name} ${arr[i].jobTitle} doesn't report to anybody.`);
-}
-}
+// for(let i = 0;i<arr.length;i++){
+//     if( arr[i].boss !== undefined) {
+//     console.log(`${arr[i].name} ${arr[i].jobTitle} reports to ${arr[i].boss}.`);
+// } else if( arr[i].boss === undefined) {
+//     console.log(`${arr[i].name} ${arr[i].jobTitle} doesn't report to anybody.`);
+// }
+// }
 
+
+
+// function decode(str){
+//     let cipher={
+//     a: 2,
+//     b: 3,
+//     c: 4,
+//     d: 5
+//             };
+
+// let stringArray = str.split(' ');
+
+// }
+
+// function decode(str){
+//     var stringArray = str.split(' ');
+//     var decodedString = ' ';
+//     for(let i=0;i<stringArray.length;i++){
+//     if(str[i][0])
+//         }
+//        return decodedString;
+//     }
 
