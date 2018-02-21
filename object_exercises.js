@@ -98,3 +98,44 @@
 //        return decodedString;
 //     }
 
+
+function createCharacter(name, nickName, race, origin, attack, defense) {
+    let x = charA.attack - charB.defense;
+    let y = charA.defense - charB.attack;
+    return {
+        name: name, 
+        nickName: nickName, 
+        race: race, 
+        origin: origin, 
+        attack: attack, 
+        defense: defense,
+        describe: function () {
+            console.log(`${this.name} is ${this.race} from ${this.origin}`);
+        },
+        evaluateFight: function() {
+            console.log(`Your opponent takes ${x} damage and you receive ${y} damage`);
+        }
+    };
+}
+
+// const character = {
+//     name: name, 
+//         nickName: nickName, 
+//         race: race, 
+//         origin: origin, 
+//         attack: attack, 
+//         defense: defense,
+//         describe: function () {
+//             console.log(`${this.name} is ${this.race} from ${this.origin}`);
+//         }
+// };
+
+const charA = createCharacter("Gandalf the White", "gandalf", "Wizard", "Middle Earth", 10, 6);
+const charB = createCharacter("Bilbo Baggins", "bilbo", "Hobbit", "The Shire", 2, 1);
+
+console.log(charA);
+//charA.evaluateFight(); // x = 9 && y = 4
+
+
+
+
