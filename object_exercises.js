@@ -22,13 +22,31 @@
 // }
 
 
-const hobbit = {
-    'meals': ['breakfast', 'second breakfast', 'elevenses', 'lunch', 'afternoon tea', 'dinner', 'supper'],
+// const hobbit = {
+//     'meals': ['breakfast', 'second breakfast', 'elevenses', 'lunch', 'afternoon tea', 'dinner', 'supper'],
+// }
+
+// console.log(hobbit.meals[3]);
+
+let person1 = {
+    name:'John',
+    jobTitle:'Marketing'
 }
+let person2 = {
+    name:'Smiley',
+    jobTitle:'Salesman'
+}
+let person3 = {
+    name:'Bob',
+    jobTitle:'In-n-out'
+}
+let arr = [person1,person2,person3];
 
-console.log(hobbit.meals[3]);
-
-
+for(let i = 0;i<arr.length;i++){
+    console.log(arr[i].name,arr[i].jobTitle)
+}
+// arr.forEach((item,index) => {
+//     Object.keys())
 
 
 
