@@ -100,8 +100,6 @@
 
 
 function createCharacter(name, nickName, race, origin, attack, defense) {
-    let x = charA.attack - charB.defense;
-    let y = charA.defense - charB.attack;
     return {
         name: name, 
         nickName: nickName, 
@@ -112,11 +110,25 @@ function createCharacter(name, nickName, race, origin, attack, defense) {
         describe: function () {
             console.log(`${this.name} is ${this.race} from ${this.origin}`);
         },
-        evaluateFight: function() {
+        evaluateFight: function(opponent) {
+            let x = this.attack - opponent.defense;
+            let y = this.defense - opponent.attack;
+            if(this.defense > opponent.attack || opponent.defense > this.attack) {
+                let z = 0;
+                let w = 0;
+                console.log(`Your opponent takes ${z} damage and you receive ${w} damage`);
+            } else {
             console.log(`Your opponent takes ${x} damage and you receive ${y} damage`);
         }
+    }
     };
 }
+
+const charA = createCharacter("Gandalf the White", "gandalf", "Wizard", "Middle Earth", 10, 6);
+const charB = createCharacter("Bilbo Baggins", "bilbo", "Hobbit", "The Shire", 2, 1);
+
+charA.evaluateFight(charB);
+charB.evaluateFight(charA);
 
 // const character = {
 //     name: name, 
@@ -130,10 +142,8 @@ function createCharacter(name, nickName, race, origin, attack, defense) {
 //         }
 // };
 
-const charA = createCharacter("Gandalf the White", "gandalf", "Wizard", "Middle Earth", 10, 6);
-const charB = createCharacter("Bilbo Baggins", "bilbo", "Hobbit", "The Shire", 2, 1);
 
-console.log(charA);
+//console.log(charA);
 //charA.evaluateFight(); // x = 9 && y = 4
 
 
